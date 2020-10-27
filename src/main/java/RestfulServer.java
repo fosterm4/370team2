@@ -25,6 +25,9 @@ public class RestfulServer {
     }
 
     private String HttpRequestToJson(Request request){
+        System.out.println("{\n"
+                +"\"body\":\"" + request.body() + "\"\n"
+                +"}");
         return"{\n"
                 +"\"body\":\"" + request.body() + "\"\n"
                 +"}";
